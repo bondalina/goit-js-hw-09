@@ -39,6 +39,9 @@
   height: 200px;
   object-fit: cover;
 }
+
+/* Task 2 */
+
 .feedback-form {
   display: flex;
   flex-direction: column;
