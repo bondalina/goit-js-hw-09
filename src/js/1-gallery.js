@@ -1,3 +1,9 @@
+// Описаний в документації
+import SimpleLightbox from "simplelightbox";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
+
 const images = [
   {
     preview:
@@ -74,7 +80,7 @@ function createMarkup(arr) {
         <img
           class="gallery-image"
           src="${preview}"
-          data-source="${original}"
+          
           alt="${description}"
         />
       </a>
@@ -82,30 +88,35 @@ function createMarkup(arr) {
   )
     .join("");
 }
+const lightbox = new SimpleLightbox('.gallery a', {
+    captionsData: 'alt',
+    captionDelay: 250,
+  });
 
-container.addEventListener("click", handleImageClick);
-function handleImageClick(event) {
-  event.preventDefault();
-  if (event.target === event.currentTarget) {
-    return;
-  }
-  const instance = basicLightbox.create(
-    `
-	<div class="modal">
-  <img src="${event.target.dataset.source}" alt="${event.target.alt}"/>
-  </div>
-    `);
-  instance.show();  
+
+// container.addEventListener("click", handleImageClick);
+// function handleImageClick(event) {
+//   event.preventDefault();
+//   if (event.target === event.currentTarget) {
+//     return;
+//   }
+//   const instance = basicLightbox.create(
+//     `
+// 	<div class="modal">
+//   <img src="${event.target.dataset.source}" alt="${event.target.alt}"/>
+//   </div>
+//     `);
+//   instance.show();  
   
-  function handleKeyDown(event) {
-    if (event.code === "Escape") {
-      instance.close();
-      document.removeEventListener("keydown", handleKeyDown);
-    }
-  }
+//   function handleKeyDown(event) {
+//     if (event.code === "Escape") {
+//       instance.close();
+//       document.removeEventListener("keydown", handleKeyDown);
+//     }
+//   }
 
-  document.addEventListener("keydown", handleKeyDown);
-}
+//   document.addEventListener("keydown", handleKeyDown);
+// }
 
 
 
