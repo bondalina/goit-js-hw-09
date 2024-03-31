@@ -9,23 +9,33 @@
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
+    <h1>Select Your Skin Problems</h1>
+    <form id="skinIssuesForm">
+      <label><input type="checkbox" name="drySkin" /> Dry Skin</label><br />
+      <label><input type="checkbox" name="oilySkin" /> Oily Skin</label><br />
+      <label><input type="checkbox" name="acne" /> Acne</label><br />
+      <label><input type="checkbox" name="wrinkles" /> Wrinkles</label><br />
+      <button type="button" id="findProcedureButton">Find Procedure</button>
+    </form>
 
-    <div class="cards-container">
-      <!-- Картки будуть відмальовані тут -->
-    </div>
+    <div id="procedureResult"></div>
 
-    <div class="gallery-favorites">
-      <ul class="list-favorites" id="scroll-list">
-        <li class="item-scroll"></li>
-        <li class="item-scroll"></li>
-        <li class="item-scroll"></li>
-        <li class="item-scroll"></li>
-        <li class="item-scroll"></li>
-        <li class="item-scroll"></li>
-      </ul>
+    <div id="hydratingFacial" style="display: none">
+      <h2>Hydrating Facial</h2>
+      <p>Here is the description of the Hydrating Facial procedure...</p>
     </div>
-    <!-- Контейнер для улюблених вправ -->
-    <div id="exercise-container"></div>
+    <div id="oilControlTreatment" style="display: none">
+      <h2>Oil Control Treatment</h2>
+      <p>Here is the description of the Oil Control Treatment procedure...</p>
+    </div>
+    <div id="acneSpotTreatment" style="display: none">
+      <h2>Acne Spot Treatment</h2>
+      <p>Here is the description of the Acne Spot Treatment procedure...</p>
+    </div>
+    <div id="antiAgingFacial" style="display: none">
+      <h2>Anti-Aging Facial</h2>
+      <p>Here is the description of the Anti-Aging Facial procedure...</p>
+    </div>
 
     <script src="./js/3.js" type="module">
       Practise
