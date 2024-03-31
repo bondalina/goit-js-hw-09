@@ -8,83 +8,28 @@
     
     <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers3.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-ec808ebb.js">
-    <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-b1c08b70.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/vendor-62cf01b8.js">
+    <link rel="stylesheet" href="/goit-js-hw-09/assets/vendor-8c8fa3ea.css">
+    <link rel="stylesheet" href="/goit-js-hw-09/assets/styles-5dcc4a78.css">
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <!-- <button class="open-modal"></button>
-    <div class="modal">
-      <button class="close-modal"></button>
-    </div> -->
-
-    <!-- <div>
-      <li class="item-favorites">
-        <div class="workout-block">
-          <p class="workout-title">Workout</p>
-          <button class="delete-from-fav" type="button">
-            <svg class="delete-icon" width="16" height="16"></svg>
-          </button>
-        </div>
-        <div class="ex-title-block">
-          <h3 class="ex-title">Air bike</h3>
-        </div>
-        <ul class="list-ex-category">
-          <li>
-            <p class="category-text">
-              <span class="category-text-accent">Burned calories: </span>200/ 3
-              min
-            </p>
-          </li>
-          <li>
-            <p class="category-text">
-              <span class="category-text-accent">Body part: </span>Waist
-            </p>
-          </li>
-          <li>
-            <p class="category-text">
-              <span class="category-text-accent">Target: </span>Abs
-            </p>
-          </li>
-        </ul>
-        <button type="button" class="add-to-fav">Add to favorites</button>
-        <button type="button" class="delete-from-fav">
-          Remove from favorites
-        </button>
-      </li>
-    </div> -->
-
-    <!-- <div id="exercise-container"></div>
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div id="exercise-details"></div>
-      </div>
-    </div> -->
-    <!-- <div id="exercise-modal"></div>
-    <div class="gallery-favorites">
-      <ul class="list-favorites"></ul>
-    </div> -->
-    <div id="exercise-modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 id="exercise-name"></h2>
-        <p><strong>Target:</strong> <span id="exercise-target"></span></p>
-        <p><strong>Body part:</strong> <span id="exercise-body-part"></span></p>
-        <p><strong>Equipment:</strong> <span id="exercise-equipment"></span></p>
-        <p>
-          <strong>Popularity:</strong> <span id="exercise-popularity"></span>
-        </p>
-        <p>
-          <strong>Burned calories:</strong>
-          <span id="exercise-burned-calories"></span>
-        </p>
-        <button id="add-to-favorites">Add</button>
-        <button id="remove-from-favorites">Remove</button>
-      </div>
+    <div class="cards-container">
+      <!-- Картки будуть відмальовані тут -->
     </div>
 
-    <!-- Контейнер для вправ -->
+    <div class="gallery-favorites">
+      <ul class="list-favorites" id="scroll-list">
+        <li class="item-scroll"></li>
+        <li class="item-scroll"></li>
+        <li class="item-scroll"></li>
+        <li class="item-scroll"></li>
+        <li class="item-scroll"></li>
+        <li class="item-scroll"></li>
+      </ul>
+    </div>
+    <!-- Контейнер для улюблених вправ -->
     <div id="exercise-container"></div>
 
     
