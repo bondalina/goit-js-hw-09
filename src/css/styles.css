@@ -478,3 +478,19 @@
     float: right;
   }
 }
+
+.list-favorites {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #ef19ba;
+}
+.item-scroll {
+  width: 350px;
+  height: 350px;
+  background-color: #6c8cff;
+}
